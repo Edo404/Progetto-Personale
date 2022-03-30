@@ -9,9 +9,21 @@ body{
     justify-content: space-around;
     -webkit-box-align: center;
             align-items: center;
-    background: #111;
+    background-color: rgba(0, 0, 0, 0); ;
+    
+    
     /* margin: 25px 0; */
     /* box-shadow: 0 5px 15px -10px #111; */
+  }
+
+  .copertina{
+    z-index: -1;
+    
+    
+
+  }
+  #img1{
+    
   }
 
   .logo {
