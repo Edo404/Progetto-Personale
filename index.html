@@ -6,23 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Accordion</title>
     <link rel="stylesheet" href="styles.css"> 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>   
 </head>
 
 <body>
     <div class="container">
+        <div class="hamburger" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
         <div class="logo">
             <img src="images/logo_lungo.png" alt="Logo">
         </div>
-        <a href="#1" class="item">ESTATE</a>
-        <a href="#2" class="item">CONCIERGE</a>
-        <a href="#3" class="item">RENOVATIONS</a>
-        <a href="#4" class="item" id="hidden">HIDDEN</a>
-        <a href="#5" class="item">CHI SIAMO</a>
-        <a href="#6" class="item">CONTATTI</a>
+            <a href="#1" class="item">ESTATE</a>
+            <a href="#2" class="item">CONCIERGE</a>
+            <a href="#3" class="item">RENOVATIONS</a>
+            <a href="#4" class="item" id="hidden">HIDDEN</a>
+            <a href="#5" class="item">CHI SIAMO</a>
+            <a href="#6" class="item">CONTATTI</a>
+        
     </div>
     
     <img id="img1" src="images/casa.jpg" alt="cover">
-    
+    <script src="index.js"></script>
 </body>
 </html>
