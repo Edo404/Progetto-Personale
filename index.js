@@ -1,4 +1,3 @@
-
 function myFunction(x) {
   x.classList.toggle("change");
 }
@@ -11,3 +10,13 @@ btn.addEventListener('click', function () {
     box[i].classList.toggle('show');
   }
 }, false);
+
+$(window).scroll(function() {    
+  var scroll = $(window).scrollTop();
+
+  if (scroll >= 100) {
+      $(".container").addClass("scrolling");
+  } else {
+      $(".container").removeClass("scrolling");
+  }
+});
