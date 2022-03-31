@@ -24,8 +24,28 @@
             <a href="#4" class="item" id="hidden">HIDDEN</a>
             <a href="#5" class="item">CHI SIAMO</a>
             <a href="#6" class="item">CONTATTI</a>
-    </div>
-    <img id="img1" src="images/casa.jpg" alt="cover">
+        </div>
+    
+    <section class="home">
+    </section>
+    
+    <div style="height: 1000px"></div>
+        
+    
+    <script>
+        $(document).ready(function(){
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            if (scroll > 300) {
+                $(".container").css("background" , "blue");
+            }
+
+            else{
+                $(".container").css("background" , "#333");  	
+            }
+        })
+        })
+    </script>
     <script src="index.js"></script>
 </body>
 
