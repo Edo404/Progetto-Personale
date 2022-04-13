@@ -13,6 +13,7 @@ body {
   justify-content: space-around;
   -webkit-box-align: center;
         align-items: center;
+  z-index: 4;
 }
 
 .container.scrolling {
@@ -63,7 +64,91 @@ body {
   visibility: hidden;
 }
 
+.background-logo {
+  background-image: url(images/sfondo-logo.png);
+  width: 100%;
+  height: 100vh;
+  background-position: center top;
+  background-size:cover;
+  background-repeat: no-repeat;
 
+}
+.container-sec{
+  position: absolute;
+  width: 100%;
+}
+
+.separator{
+  display:flex;
+  align-items: center;
+  padding-top: 4em;
+}
+
+.separator .line{
+  height: 3px;
+  flex: 0.5;
+  background-color: white;
+}
+
+.font {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+}
+.separator .thinked{
+  padding: 0 2rem;
+  color: white;
+}
+
+.first-desc {
+  position: relative;
+  top: 2em;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.second-desc {
+  position: relative;
+  top: 4em;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+.separator-2{
+  display: flex;
+  align-items: center;
+  padding-top: 6em;
+  overflow: hidden;
+}
+
+.separator-2 .line{
+  height: 3px;
+  flex: 0.5;
+  background-color: white;
+}
+
+.separator-2 .thinked-2 {
+  padding: 0 2rem;
+  color: white;
+  overflow: hidden;
+}
+.third-desc {
+  position: relative;
+  top: 2em;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  max-width: 55rem;
+  margin: 0 auto;
+}
 
 @media all and (max-width: 1180px) {
   .container {
@@ -136,4 +221,28 @@ body {
     display: none;
     visibility: hidden;
   }
+}
+
+@media all and (max-width: 600px) {
+  .background-logo {
+    background-image: url(images/sfondo-logo.png);
+    width: 100%;
+    height: 120vh;
+    background-position: center top;
+    background-size:cover;
+  
+  }
+}
+
+@media all and (max-width: 450px) {
+  .separator-2 {
+    visibility: hidden;
+  }
+
+  .third-desc{
+    visibility: hidden;
+  }
+  /* .thinked {
+    visibility: hidden;
+  } */
 }
