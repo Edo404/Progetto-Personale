@@ -151,44 +151,9 @@ body {
   margin: 0 auto;
 }
 
-/* .div-estate {
-  position: relative;
-  max-width: 75%;
-  margin: 1% 1%;
-  background-image: url(images/estate.jpg);
-}
 
-.div-estate img {
-  vertical-align: middle;
-}
 
-.black-square .div-estate {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  
-/* .img-estate {
-  width: 75%;
-  padding: 1% 1%;
-} */
-
-/* .background-es {
-  background-image: url(images/estate.jpg);
-  position: absolute;
-  background-size: cover;
-  width: 75%;
-  height: 100vh;
-} */
-
-/* .black-square {
-  float: left;
-  background-color: #eee;
-  padding: 40px;
-  color: #000;
-  position: relative;   
-} */
-
-.paperino {
+/* .paperino {
   font-family: 'Lato';
   font-size: 40px;
   position: relative;
@@ -202,12 +167,39 @@ body {
   position: relative;
   left: 70%;
   margin-bottom: 200px;
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1;
   width: 50%;
   padding: 30px;
+} */
+
+.container-estate {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+ 
 }
 
+
+.estate-img {
+  position: relative;
+  right: 1%;
+  height: 75%;
+  width: 70%;
+}
+
+.box-1{
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  bottom: 65%;
+  width: 32em;
+  height: 45%;
+  margin-left: 50%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, .8);
+  color: white;
+}
 
 
 @media all and (max-width: 1180px) {
