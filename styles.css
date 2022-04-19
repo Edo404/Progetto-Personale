@@ -151,20 +151,62 @@ body {
   margin: 0 auto;
 }
 
-.img-estate {
+/* .div-estate {
+  position: relative;
+  max-width: 75%;
+  margin: 1% 1%;
+  background-image: url(images/estate.jpg);
+}
+
+.div-estate img {
+  vertical-align: middle;
+}
+
+.black-square .div-estate {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  
+/* .img-estate {
   width: 75%;
   padding: 1% 1%;
-}
+} */
 
-.black-square {
+/* .background-es {
+  background-image: url(images/estate.jpg);
+  position: absolute;
+  background-size: cover;
+  width: 75%;
+  height: 100vh;
+} */
+
+/* .black-square {
+  float: left;
+  background-color: #eee;
+  padding: 40px;
+  color: #000;
+  position: relative;   
+} */
+
+.paperino {
+  font-family: 'Lato';
+  font-size: 40px;
   position: relative;
-  margin-left: 50%;
-  bottom: 200px; 
-  background-color: white;
-  width: 50%;
-  
+  max-width: 75%;
+  margin: 1% 1%;
 }
 
+.paperino img {vertical-align: middle;}
+
+.pippo {
+  position: relative;
+  left: 70%;
+  margin-bottom: 200px;
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 50%;
+  padding: 30px;
+}
 
 
 
