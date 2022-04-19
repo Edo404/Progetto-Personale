@@ -70,7 +70,7 @@ body {
   width: 100%;
   height: 100vh;
   background-position: center top;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 
 }
@@ -150,6 +150,23 @@ body {
   max-width: 55rem;
   margin: 0 auto;
 }
+
+.img-estate {
+  width: 75%;
+  padding: 1% 1%;
+}
+
+.black-square {
+  position: relative;
+  margin-left: 50%;
+  bottom: 200px; 
+  background-color: white;
+  width: 50%;
+  
+}
+
+
+
 
 @media all and (max-width: 1180px) {
   .container {
