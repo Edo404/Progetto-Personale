@@ -140,6 +140,7 @@ body {
   color: white;
   overflow: hidden;
 }
+
 .third-desc {
   position: relative;
   top: 2em;
@@ -151,40 +152,15 @@ body {
   margin: 0 auto;
 }
 
-
-
-/* .paperino {
-  font-family: 'Lato';
-  font-size: 40px;
-  position: relative;
-  max-width: 75%;
-  margin: 1% 1%;
-}
-
-.paperino img {vertical-align: middle;}
-
-.pippo {
-  position: relative;
-  left: 70%;
-  margin-bottom: 200px;
-  background: rgba(0, 0, 0, 0.5); 
-  color: #f1f1f1;
-  width: 50%;
-  padding: 30px;
-} */
-
 .container-estate {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: red;
- 
 }
-
 
 .estate-img {
   position: relative;
-  right: 1%;
+  left: 1%;
   height: 75%;
   width: 70%;
 }
@@ -192,15 +168,33 @@ body {
 .box-1{
   font-family: 'Lato', sans-serif;
   position: relative;
-  bottom: 65%;
-  width: 32em;
+  bottom: 63%;
+  /* width: 32em; */
   height: 45%;
-  margin-left: 50%;
+  margin-right: 15%;
+  margin-left: 55%;
   padding: 20px;
+  /* background-color: white; */
   background-color: rgba(0, 0, 0, .8);
   color: white;
 }
 
+.separator-3{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.separator-3 .line{
+  height: 3px;
+  flex: 0.2;
+  background-color: white;
+}
+
+.estate-h1 {
+  font-size: 50px;
+  margin-bottom: 3%;
+}
 
 @media all and (max-width: 1180px) {
   .container {
