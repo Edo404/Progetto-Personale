@@ -199,6 +199,11 @@ body {
   margin-bottom: 3%;
 }
 
+.container-mobile {
+  visibility: hidden;
+}
+
+
 @media all and (max-width: 1180px) {
   .container {
     -webkit-box-orient: vertical;
@@ -270,6 +275,41 @@ body {
     display: none;
     visibility: hidden;
   }
+
+  .container-estate{
+    display: none;
+  }
+
+  .container-mobile{
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/estate.jpg);
+    opacity: 0.50;
+  }
+
+  .box-mobile{
+    position: relative;
+    top: 10em; 
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  .h1-mobile {
+    font-size: 40px;
+  }
+
+}
+
+@media all and (max-width: 700px) {
   .separator-2 {
     visibility: hidden;
   }
