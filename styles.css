@@ -66,11 +66,11 @@ body {
 }
 
 .background-logo {
-  background-image: url(images/sfondo-logo.png);
+  background-image: url(images/sfondodo.jpg);
   width: 100%;
   height: 100vh;
   background-position: center top;
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
 
 }
@@ -155,22 +155,25 @@ body {
 .container-estate {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .estate-img {
   position: relative;
   left: 1%;
-  height: 75%;
+  /* height: 75%; */
   width: 70%;
+  max-width: 100%;
+  height: auto;
 }
 
 .box-1{
   font-family: 'Lato', sans-serif;
-  position: relative;
-  bottom: 63%;
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
   /* width: 32em; */
-  height: 45%;
+  height: auto;
   margin-right: 15%;
   margin-left: 55%;
   padding: 20px;
@@ -267,20 +270,6 @@ body {
     display: none;
     visibility: hidden;
   }
-}
-
-@media all and (max-width: 600px) {
-  .background-logo {
-    background-image: url(images/sfondo-logo.png);
-    width: 100%;
-    height: 120vh;
-    background-position: center top;
-    background-size:cover;
-  
-  }
-}
-
-@media all and (max-width: 450px) {
   .separator-2 {
     visibility: hidden;
   }
@@ -288,7 +277,4 @@ body {
   .third-desc{
     visibility: hidden;
   }
-  /* .thinked {
-    visibility: hidden;
-  } */
 }
