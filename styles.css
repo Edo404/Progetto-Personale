@@ -431,3 +431,9 @@ body {
     visibility: hidden;
   }
 }
+
+@media all and (max-width: 400px) {
+  .second-desc {
+    visibility: hidden;
+  }
+}
