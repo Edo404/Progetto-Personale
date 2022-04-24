@@ -23,20 +23,15 @@ $(window).scroll(function() {
 
 
 
-/*****************************************************
- * IMPOSSIBILE MA CE LA FAREMO AD ADATTARLO QUESTO MERDOSISSIMO SLIDER
- * *******************************************************/
 
 
-
-/*
-
+/****************************************/
 const cols = 3;
 const main = document.getElementById('main');
 let parts = [];
 
 let images = [
-  "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80",
+  "images/casa.jpg",
   "https://images.unsplash.com/photo-1544198365-f5d60b6d8190?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80",
   "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80"
 ];
@@ -121,44 +116,44 @@ function lerp(start, end, amount) {
   return (1-amount)*start+amount*end
 }
 
-const cursor = document.createElement('div');
-cursor.className = 'cursor';
+// const cursor = document.createElement('div');
+// cursor.className = 'cursor';
 
-const cursorF = document.createElement('div');
-cursorF.className = 'cursor-f';
-let cursorX = 0;
-let cursorY = 0;
-let pageX = 0;
-let pageY = 0;
-let size = 8;
-let sizeF = 36;
-let followSpeed = .16;
+// const cursorF = document.createElement('div');
+// cursorF.className = 'cursor-f';
+// let cursorX = 0;
+// let cursorY = 0;
+// let pageX = 0;
+// let pageY = 0;
+// let size = 8;
+// let sizeF = 36;
+// let followSpeed = .16;
 
-document.body.appendChild(cursor);
-document.body.appendChild(cursorF);
+// document.body.appendChild(cursor);
+// document.body.appendChild(cursorF);
 
-if ('ontouchstart' in window) {
-  cursor.style.display = 'none';
-  cursorF.style.display = 'none';
-}
+// if ('ontouchstart' in window) {
+//   cursor.style.display = 'none';
+//   cursorF.style.display = 'none';
+// }
 
-cursor.style.setProperty('--size', size+'px');
-cursorF.style.setProperty('--size', sizeF+'px');
+// cursor.style.setProperty('--size', size+'px');
+// cursorF.style.setProperty('--size', sizeF+'px');
 
-window.addEventListener('mousemove', function(e) {
-  pageX = e.clientX;
-  pageY = e.clientY;
-  cursor.style.left = e.clientX-size/2+'px';
-  cursor.style.top = e.clientY-size/2+'px';
-});
+// window.addEventListener('mousemove', function(e) {
+//   pageX = e.clientX;
+//   pageY = e.clientY;
+//   cursor.style.left = e.clientX-size/2+'px';
+//   cursor.style.top = e.clientY-size/2+'px';
+// });
 
-function loop() {
-  cursorX = lerp(cursorX, pageX, followSpeed);
-  cursorY = lerp(cursorY, pageY, followSpeed);
-  cursorF.style.top = cursorY - sizeF/2 + 'px';
-  cursorF.style.left = cursorX - sizeF/2 + 'px';
-  requestAnimationFrame(loop);
-}
+// function loop() {
+//   cursorX = lerp(cursorX, pageX, followSpeed);
+//   cursorY = lerp(cursorY, pageY, followSpeed);
+//   cursorF.style.top = cursorY - sizeF/2 + 'px';
+//   cursorF.style.left = cursorX - sizeF/2 + 'px';
+//   requestAnimationFrame(loop);
+// }
 
 loop();
 
@@ -209,4 +204,3 @@ function wheel(e) {
 }
 window.addEventListener('mousewheel', wheel, false);
 window.addEventListener('wheel', wheel, false);
-*/
