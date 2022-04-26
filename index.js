@@ -1,3 +1,25 @@
+$(document).ready(function() {
+  
+  setTimeout(function() {
+    $('#ctn-preloader').addClass('loaded');
+    // al termine viene visualizzato lo scroll
+    $('body').removeClass('no-scroll-y');
+
+    if ($('#ctn-preloader').hasClass('loaded')) {
+      // intera sezione del preloader viene eliminata 
+      $('#preloader').delay(1000).queue(function() {
+        $(this).remove();
+      });
+    }
+  }, 500);
+  
+});
+
+
+
+
+
+
 function myFunction(x) {
   x.classList.toggle("change");
 }
