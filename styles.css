@@ -542,6 +542,15 @@ svg{
     width: 30%;
   }
   
+  .social-icons a.facebook {
+    background-color:#790405
+  }
+  .social-icons a.twitter {
+    background-color:#B18904
+  }
+  .social-icons a.linkedin {
+    background-color:#343567;
+  }
  
   
 }
