@@ -11,7 +11,7 @@ $(document).ready(function() {
         $(this).remove();
       });
     }
-  }, 500);
+  }, 1000);
   
 });
 
@@ -41,5 +41,8 @@ $(window).scroll(function() {
   }
 });
 
+const year = document.getElementById("actualYear");
+const actualYear = new Date();
+year.innerHTML = actualYear.getFullYear();
 
 

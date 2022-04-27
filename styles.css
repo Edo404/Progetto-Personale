@@ -61,20 +61,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body {
   padding: 0;
   margin: 0;
@@ -301,6 +287,117 @@ body {
   visibility: hidden;
 }
 
+/* FOOTER */
+
+.site-footer
+{
+  background-color: black;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:white;
+
+}
+
+.riga{
+  text-align: center;
+}
+
+#colon {
+  display: inline-table;
+  padding: 4%;
+}
+
+#logo-foot{
+  width: 70%;
+}
+
+.site-footer h6
+{
+  color:white;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+ 
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+
+svg{
+  width: 15px;
+  height: 15px;
+}
+
+.site-footer
+{
+  padding-bottom:0
+}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+} 
+
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons a{
+  background-color:#eceeef;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+.social-icons a.facebook:hover
+{
+  background-color:#790405
+}
+.social-icons a.twitter:hover
+{
+  background-color:#B18904
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#343567;
+}
+
+.footer2 {
+  width: 100%;
+  height: 4em;
+  text-align: center;
+  background-color: black;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+}
+
+/* END FOOTER */
+
+@media all and (max-width: 1480px) {
+  /* Footer Responsive */
+  #colon {
+    display: inline-table;
+    padding: 2.5%;
+  }  
+}
 
 @media all and (max-width: 1180px) {
   .container {
@@ -434,6 +531,18 @@ body {
   .section{
     height: 30em;
   }
+  
+  #colon {
+    display:list-item;
+    padding: 4%;
+  }
+
+  #logo-foot{
+    width: 30%;
+  }
+  
+ 
+  
 }
 
 @media all and (max-width: 700px) {
@@ -449,5 +558,9 @@ body {
 @media all and (max-width: 400px) {
   .second-desc {
     visibility: hidden;
+  }
+
+  #logo-foot{
+    width: 50%;
   }
 }
