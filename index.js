@@ -15,6 +15,30 @@ $(document).ready(function() {
   
 });
 
+window.addEventListener("scroll", (event) => {
+  let scrollY = this.scrollY;
+  
+  if (scrollY >= 100){
+      
+      $("#logo").css({
+        "display": "none",
+        });
+      $("#logo-white").css({
+          "display": "inline",
+      });
+      
+ 
+  }  else if (scrollY < 100 || scrollY == 0){
+    $("#logo-white").css({
+      "display": "none",
+      });
+      $("#logo").css({
+        "display": "inline",
+        });
+  }
+  
+
+});
 
 
 
@@ -39,6 +63,12 @@ $(window).scroll(function() {
   } else {
       $(".container").removeClass("scrolling");
   }
+
+    // var img = document.createElement("img");
+    //   img.src = 'images/logo_bianco.png';
+    //   var parent = document.querySelector(".logo");
+    //   parent.appendChild(img);
+
 });
 
 const year = document.getElementById("actualYear");

@@ -105,6 +105,10 @@ body {
   padding: 10px;
 }
 
+#logo-white {
+  display: none;
+}
+
 .item {
   color: rgba(255, 255, 255, 0.88);
   text-decoration: none;
@@ -419,6 +423,10 @@ svg{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60%;
+    width: 30%; 
+  }
+
+  #logo-white {
     width: 30%;
   }
 
