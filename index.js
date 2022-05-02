@@ -60,6 +60,8 @@ $(window).scroll(function() {
     }
 });
 
+
+
 // year counter in footer 2
 const year = document.getElementById("actualYear");
 const actualYear = new Date();
