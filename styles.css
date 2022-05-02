@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
-
-/* Preloader */
+/***************************************************************************/
+/*                                  PRELOADER                              */
+/***************************************************************************/
 .no-scroll-y {
 	overflow-y: hidden;
 }
@@ -33,7 +34,7 @@
   width: calc(50% + 1px);
 }
 
-/* posizionamento sezioni da aprire */
+/* positioning section to open */
 .ctn-preloader .loader-section.section-left {
   left: 0;
 }
@@ -42,14 +43,13 @@
   right: 0;
 }
 
-
-/* opacizzazione immagine */
+/* image matting */
 .loaded .animation-preloader {
   opacity: 0;
   transition: 0.3s ease-out;
 }
 
-/* effetto apertura a tenda */
+/* courtain opening */
 .loaded .loader-section.section-left {
   transform: translateX(-101%);
   transition: 0.5s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
@@ -60,13 +60,15 @@
   transition: 0.5s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
 }
 
-
 body {
   padding: 0;
   margin: 0;
   background-color:black;
 }
 
+/***************************************************************************/
+/*                                  NAVBAR                                 */
+/***************************************************************************/
 .container {
   position: fixed;
   width: 100%;
@@ -83,19 +85,12 @@ body {
   color: white;
 }
 
+/* hamburger menù */
 .hamburger {
   display: none;
 }
 
-.home {
-  width: 100%;
-  height: 100vh;
-  background-image: url(images/copertina4.jpg);
-  background-position: center top;
-  background-size:cover;
-}
-
-
+/* logo */
 .logo {
   -webkit-box-ordinal-group: 2;
                       order: 1;
@@ -105,10 +100,12 @@ body {
   padding: 10px;
 }
 
+/* white logo */
 #logo-white {
   display: none;
 }
 
+/* navbar items */
 .item {
   color: rgba(255, 255, 255, 0.88);
   text-decoration: none;
@@ -126,6 +123,21 @@ body {
                       order: 2;
 }
 
+/***************************************************************************/
+/*                             HOME IMAGE COVER                            */
+/***************************************************************************/
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/copertina4.jpg);
+  background-position: center top;
+  background-size:cover;
+}
+
+
+/***************************************************************************/
+/*                            BACKGROUND LOGO                              */
+/***************************************************************************/
 .background-logo {
   background-image: url(images/sfondodo.jpg);
   width: 100%;
@@ -135,11 +147,13 @@ body {
   background-repeat: no-repeat;
 
 }
+
 .container-sec{
   position: absolute;
   width: 100%;
 }
 
+/* line separator */
 .separator{
   display:flex;
   align-items: center;
@@ -152,15 +166,18 @@ body {
   background-color: white;
 }
 
+/* font for the text sections */
 .font {
   font-family: 'Lato', sans-serif;
   font-size: 30px;
 }
+
 .separator .thinked{
   padding: 0 2rem;
   color: white;
 }
 
+/* text sections */
 .first-desc {
   position: relative;
   top: 2em;
@@ -190,6 +207,7 @@ body {
   overflow: hidden;
 }
 
+/* second title and line */
 .separator-2 .line{
   height: 3px;
   flex: 0.5;
@@ -202,6 +220,7 @@ body {
   overflow: hidden;
 }
 
+/* text section after title */
 .third-desc {
   position: relative;
   top: 2em;
@@ -213,6 +232,9 @@ body {
   margin: 0 auto;
 }
 
+/***************************************************************************/
+/*                       ESTATE, CONCIERGE, RENOVATIONS                    */
+/***************************************************************************/
 .section {
   height: 45em;
 }
@@ -223,6 +245,7 @@ body {
   height: auto;
 }
 
+/* estate image */
 .estate-img {
   position: relative;
   left: 1%;
@@ -232,6 +255,7 @@ body {
   height: auto;
 }
 
+/* estate and renovations black box for text on image */
 .box-1{
   font-family: 'Lato', sans-serif;
   position: absolute;
@@ -247,6 +271,7 @@ body {
   color: white;
 }
 
+/* concierge image */
 .estate-img2 {
   position: relative;
   left: 30%;
@@ -256,6 +281,7 @@ body {
   height: auto;
 }
 
+/* concierge black box for text, inverted */
 .box-2{
   font-family: 'Lato', sans-serif;
   position: absolute;
@@ -270,6 +296,8 @@ body {
   background-color: rgba(0, 0, 0, .8);
   color: white;
 }
+
+/* line separators */
 .separator-3{
   display: flex;
   align-items: center;
@@ -282,29 +310,30 @@ body {
   background-color: white;
 }
 
+/* sections titles estate, concierge, renovations */
 .estate-h1 {
   font-size: 50px;
   margin-bottom: 3%;
 }
 
+/* container mobile version */
 .container-mobile {
   visibility: hidden;
 }
 
-/* FOOTER */
-
-.site-footer
-{
+/***************************************************************************/
+/*                                  FOOTER                                 */
+/***************************************************************************/
+.site-footer {
   background-color: black;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
   color:white;
   font-family: 'Lato', sans-serif;
-
 }
 
-.riga{
+.riga {
   text-align: center;
 }
 
@@ -313,44 +342,42 @@ body {
   padding: 4%;
 }
 
-#logo-foot{
+#logo-foot {
   width: 70%;
 }
 
-.site-footer h6
-{
+.site-footer h6 {
   color:white;
   font-size:16px;
   text-transform:uppercase;
   margin-top:5px;
   letter-spacing:2px
 }
- 
-.footer-links
-{
+
+/* elements in the colons */
+.footer-links {
   padding-left:0;
-  list-style:none
+  list-style:none;
+  color: white;
 }
 
-svg{
+/* social icons */
+svg {
   width: 15px;
   height: 15px;
 }
 
-.site-footer
-{
+.site-footer {
   padding-bottom:0
 }
 
-.social-icons
-{
+.social-icons {
   padding-left:0;
   margin-bottom:0;
-  list-style:none
+  list-style:none;
 } 
 
-.social-icons li
-{
+.social-icons li {
   display:inline-block;
   margin-bottom:4px
 }
@@ -370,6 +397,7 @@ svg{
   transition:all .2s linear
 }
 
+/* social icons color when hover */
 .social-icons a.facebook:hover
 {
   background-color:#790405
@@ -383,6 +411,7 @@ svg{
   background-color:#343567;
 }
 
+/*second footer */
 .footer2 {
   width: 100%;
   height: 4em;
@@ -394,17 +423,22 @@ svg{
   font-family: 'Lato', sans-serif;
 }
 
-/* END FOOTER */
-
+/***************************************************************************/
+/*                             MEDIA FOR 1480PX                            */
+/***************************************************************************/
 @media all and (max-width: 1480px) {
-  /* Footer Responsive */
+  /* footer responsive */
   #colon {
     display: inline-table;
     padding: 2.5%;
   }  
 }
 
+/***************************************************************************/
+/*                             MEDIA FOR 1180PX                            */
+/***************************************************************************/
 @media all and (max-width: 1180px) {
+  /* navbar responsive */
   .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -414,6 +448,7 @@ svg{
     background-color: black;
   }
 
+  /* logo in navbar responsive */
   .logo {
     height: 80px;
   }    
@@ -430,13 +465,14 @@ svg{
     width: 30%;
   }
 
+  /* hamburger menù and bars */
   .hamburger {
     display: inline-block;
     position: absolute;
     top: 30px;
     cursor: pointer;
   }
-      
+    
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -444,7 +480,8 @@ svg{
     margin: 6px 0;
     transition: 0.4s;
   }
-      
+  
+  /* hamburger transition */
   .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
@@ -467,6 +504,7 @@ svg{
     margin: auto auto;
   }
 
+  /* navbar items */
   .item {
     text-align: center;
     border-bottom: 1px solid #111;
@@ -482,6 +520,7 @@ svg{
     visibility: hidden;
   }
 
+  /* estate, concierge, renovations responsive */
   .container-estate{
     display: none;
   }
@@ -541,6 +580,7 @@ svg{
     height: 30em;
   }
   
+  /* footer responsive */
   #colon {
     display:list-item;
     padding: 2%;
@@ -564,7 +604,11 @@ svg{
   
 }
 
+/***************************************************************************/
+/*                             MEDIA FOR 700PX                             */
+/***************************************************************************/
 @media all and (max-width: 700px) {
+  /* text sections deleted in mobile */
   .separator-2 {
     visibility: hidden;
   }
@@ -574,11 +618,15 @@ svg{
   }
 }
 
+/***************************************************************************/
+/*                             MEDIA FOR 400PX                             */
+/***************************************************************************/
 @media all and (max-width: 400px) {
+  /* section with background responsive */
   .second-desc {
     visibility: hidden;
   }
-
+  /* logo footer responsive */
   #logo-foot{
     width: 50%;
   }
