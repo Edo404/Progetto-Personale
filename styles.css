@@ -113,6 +113,13 @@ body {
   padding: 24px;
 } 
 
+.item-logo {
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  font-family: 'Lato';
+  padding: 24px;
+}
+
 .item:hover {
   color: #fff;
   background: rgba(255, 255, 255, 0.15);
