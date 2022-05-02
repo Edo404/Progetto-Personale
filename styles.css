@@ -323,6 +323,11 @@ body {
   margin-bottom: 3%;
 }
 
+.estate-h1 a{
+  text-decoration: none;
+  color: white;
+}
+
 /* container mobile version */
 .container-mobile {
   visibility: hidden;
