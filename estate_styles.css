@@ -3,15 +3,27 @@
 	--e: cubic-bezier(0.19, 1, 0.22, 1);
 	--font-sans: 'Rubik', sans-serif;
 	--font-serif: 'Cardo', serif;
-  }
-  
+}
 
 .home-2 {
-	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     height: 100vh;
     background-image: url(images/copertina1.jpg);
     background-position: center top;
     background-size:cover;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.estate-title{
+    font-family: 'Lato', sans-serif;
+    width: 10em;
+    align-items: center;
+    font-size: xx-large;color: white;
+    background-color: rgba(0, 0, 0, .7);
 }
 
 .about-it{
@@ -19,6 +31,7 @@
 	height: 100%;
 	max-height: 100vh;
 }
+
 .about-it-container {
 	position: absolute;
 	width: 100%;
@@ -100,7 +113,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 110%;
 	height: 200%;
 	pointer-events: none;
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.320) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.540) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.790) 100%);
@@ -179,6 +192,9 @@
 }
 
 @media (max-width: 1180px){
+	.home-2 {
+		height: 500px;
+	}
 	.about-it-container{
 		display: none;
 	}
