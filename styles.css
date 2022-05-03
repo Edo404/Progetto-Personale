@@ -146,7 +146,7 @@ body {
 /*                            BACKGROUND LOGO                              */
 /***************************************************************************/
 .background-logo {
-  background-image: url(images/sfondodo.jpg);
+  background-image: url(images/sfondo_logo.png);
   width: 100%;
   height: 100vh;
   background-position: center top;
@@ -678,6 +678,10 @@ svg {
     visibility: hidden;
   }
 
+  .home {
+    height: 500px;
+  }
+
   /* estate, concierge, renovations responsive */
   .container-estate{
     display: none;
@@ -733,10 +737,10 @@ svg {
   .h1-mobile {
     font-size: 40px;
   }
-/* 
+
   .section{
     height: 30em;
-  } */
+  }
   
   /* footer responsive */
   #colon {

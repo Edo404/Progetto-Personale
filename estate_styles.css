@@ -114,7 +114,7 @@
 	background-image: url(images/concierge.jpg);
 }
 .card:nth-child(3):before {
-	background-image: url(images/IMG_5298.jpg);
+	background-image: url(images/estate_sect1.jpg);
 }
 .card:nth-child(4):before {
 	background-image: url(images/estate.jpg);
@@ -191,7 +191,7 @@
 		background-position: center top;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-image: url(images/IMG_5298.jpg);
+		background-image: url(images/estate_sect1.jpg);
 		opacity: 0.50;
 		text-align: center;
 	  }
