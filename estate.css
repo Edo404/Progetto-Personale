@@ -5,27 +5,33 @@
 	--font-serif: 'Cardo', serif;
 }
 
-.home-4 {
+/***************************************************************************/
+/*                             HOME IMAGE COVER                            */
+/***************************************************************************/
+.home-2 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-image: url(images/renovations.jpg);
+    background-image: url(images/copertina1.jpg);
     background-position: center top;
     background-size:cover;
     text-align: center;
     vertical-align: middle;
 }
 
-.renovations-title{
+.estate-title{
     font-family: 'Lato', sans-serif;
-    width: 11em;
+    width: 10em;
     align-items: center;
     font-size: xx-large;color: white;
     background-color: rgba(0, 0, 0, .7);
 }
 
+/***************************************************************************/
+/*                      SECTION IMAGE AND DESCRIPTION                      */
+/***************************************************************************/
 .about-it{
 	width: 100%;
 	height: 100%;
@@ -59,8 +65,9 @@
 	max-width: 25em;
 }
 
-
-/* CARDS  */
+/***************************************************************************/
+/*                                 STEP BY STEP                            */
+/***************************************************************************/
 .page-content {
 	display: grid;
 	grid-gap: 3rem;
@@ -69,16 +76,19 @@
 	margin: 0 auto;
 	font-family:  'Lato', sans-serif;
 }
+
 @media (min-width: 600px) {
 	.page-content {
 		grid-template-columns: repeat(2, 1fr);
-   }
+    }
 }
+
 @media (min-width: 800px) {
 	.page-content {
 		grid-template-columns: repeat(4, 1fr);
-   }
+    }
 }
+
 .card {
 	position: relative;
 	display: flex;
@@ -90,11 +100,13 @@
 	background-color: whitesmoke;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
+
 @media (min-width: 600px) {
 	.card {
 		height: 350px;
-   }
+    }
 }
+
 .card:before {
 	content: '';
 	position: absolute;
@@ -107,6 +119,7 @@
 	transition: transform calc(var(--d) * 1.5) var(--e);
 	pointer-events: none;
 }
+
 .card:after {
 	content: '';
 	display: block;
@@ -120,18 +133,24 @@
 	transform: translateY(-50%);
 	transition: transform calc(var(--d) * 2) var(--e);
 }
+
+/* cards background */
 .card:nth-child(1):before {
 	background-image: url(images/card1.jpg);
 }
+
 .card:nth-child(2):before {
 	background-image: url(images/card2.jpg);
 }
+
 .card:nth-child(3):before {
 	background-image: url(images/card3.jpg);
 }
+
 .card:nth-child(4):before {
 	background-image: url(images/card4.jpg);
 }
+
 .content {
 	position: relative;
 	display: flex;
@@ -142,14 +161,17 @@
 	transition: transform var(--d) var(--e);
 	z-index: 1;
 }
+
 .content > * + * {
 	margin-top: 1rem;
 }
+
 .title {
 	font-size: 1.3rem;
 	font-weight: bold;
 	line-height: 1.2;
 }
+
 .copy {
 	font-family: var(--font-serif);
 	font-size: 1.125rem;
@@ -157,49 +179,65 @@
 	line-height: 1.35;
 }
 
+/* cards animations over 600px */
 @media (hover: hover) and (min-width: 600px) {
 	.card:after {
 		transform: translateY(0);
-   }
+    }
+	
 	.content {
 		transform: translateY(calc(100% - 4.5rem));
-   }
+    }
+	
 	.content > *:not(.title) {
 		opacity: 0;
 		transform: translateY(1rem);
 		transition: transform var(--d) var(--e), opacity var(--d) var(--e);
-   }
+    }
+	
 	.card:hover, .card:focus-within {
 		align-items: center;
-   }
+    }
+	
 	.card:hover:before, .card:focus-within:before {
 		transform: translateY(-4%);
-   }
+    }
+	
 	.card:hover:after, .card:focus-within:after {
 		transform: translateY(-50%);
-   }
+    }
+	
 	.card:hover .content, .card:focus-within .content {
 		transform: translateY(0);
-   }
+    }
+	
 	.card:hover .content > *:not(.title), .card:focus-within .content > *:not(.title) {
 		opacity: 1;
 		transform: translateY(0);
 		transition-delay: calc(var(--d) / 8);
-   }
+    }
+	
 	.card:focus-within:before, .card:focus-within:after, .card:focus-within .content, .card:focus-within .content > *:not(.title) {
 		transition-duration: 1s;
-   }
+    }
 }
 
+/***************************************************************************/
+/*                                  MEDIA FOR 1180PX                       */
+/***************************************************************************/
 @media (max-width: 1180px){
-	.home-4 {
+	/* cover image responsive */
+	.home-2 {
 		height: 500px;
 	}
+
+	/* mobile version section image description */
 	.about-it-container{
 		display: none;
 	}
 
-	.renovations-mobile{
+	/* mobile version of the picture */
+	.estate-mobile{
 		visibility: visible;
 		position: absolute;
 		width: 100%;
@@ -207,8 +245,8 @@
 		background-position: center top;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-image: url(images/renovations1.jpg);
+		background-image: url(images/estate_sect1.jpg);
 		opacity: 0.50;
 		text-align: center;
-	  }
+	}
 }
