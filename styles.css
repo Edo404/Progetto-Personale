@@ -603,7 +603,7 @@ svg {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/estate.jpg);
+    background-image: url(images/estate_box.jpg);
     opacity: 0.50;
   }
 
@@ -615,7 +615,7 @@ svg {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/concierge.jpg);
+    background-image: url(images/concierge_box.jpg);
     opacity: 0.50;
   }
 
@@ -627,7 +627,7 @@ svg {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/renovations.jpg);
+    background-image: url(images/renovations_box.jpg);
     opacity: 0.50;
   }
 
