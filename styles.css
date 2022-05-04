@@ -517,6 +517,7 @@ svg {
   /* logo in navbar responsive */
   .logo {
     height: 80px;
+    line-height: 0px;
   }    
     
   #logo {
