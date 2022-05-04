@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="contatti.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container">
+        <!-- hamburger menù -->
+        <div class="hamburger" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="logo">
+            <a href="index.html" class="item-logo">
+                <img id="logo" src="images/logo_colori.png" alt="Logo">
+                <img id="logo-white" src="images/logo_bianco.png" alt="Logo">
+            </a>
+        </div>
+        <a href="estate.html" class="item">ESTATE</a>
+        <a href="concierge.html" class="item">CONCIERGE</a>
+        <a href="renovations.html" class="item">RENOVATIONS</a>
+        <a href="#4" class="item">VLOG</a>
+        <a href="who-we-are.html" class="item">CHI SIAMO</a>
+        <a href="contatti.html" class="item">CONTATTI</a>
+    </div>
+        
+    <div class="contact-form">
+        <div class="first-container">
+            <div class="info-container">
+                <div><img class="icon" />
+                    <h3>Address</h3>
+                    <p>Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US</p>
+                </div>
+                <div> <img class="icon" />
+                    <h3>Lets Talk</h3>
+                    <p>+1 800 1236879</p>
+                </div>
+                <div><img class="icon" />
+                    <h3>General Support</h3>
+                    <p>contact@example.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="second-container">
+            <h2>Send Us A Message</h2>
+            <form>
+                <div class="form-group"><label for="name-input">Tell us your name*</label><input id="name-input" type="text" placeholder="First name" required="required" /><input type="text" placeholder="Last name" required="required" /></div>
+                <div class="form-group"><label for="email-input">Enter your email*</label><input id="email-input" type="text" placeholder="Eg. example@email.com" required="required" /></div>
+                <div class="form-group"><label for="phone-input">Enter phone number*</label><input id="phone-input" type="text" placeholder="Eg. +1 800 000000" required="required" /></div>
+                <div class="form-group"><label for="message-textarea">Message</label><textarea id="message-textarea" placeholder="Write us a message"></textarea></div><button>Send message</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
