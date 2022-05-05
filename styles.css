@@ -464,16 +464,15 @@ svg {
 }
 
 /* social icons color when hover */
-.social-icons a.facebook:hover
-{
+.social-icons a.facebook:hover {
   background-color:#790405
 }
-.social-icons a.instagram:hover
-{
+
+.social-icons a.instagram:hover {
   background-color:#B18904
 }
-.social-icons a.linkedin:hover
-{
+
+.social-icons a.linkedin:hover {
   background-color:#343567;
 }
 
