@@ -154,7 +154,7 @@ body {
 }
 
 .linea {
-	height: 20px;
+	display: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -175,4 +175,10 @@ body {
 	}
 }
  
-
+@media screen and (max-width: 1180px) {
+	.linea {
+		display: block;
+		height: 20px;
+	}
+}
+ 
