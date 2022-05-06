@@ -81,20 +81,22 @@
             </div>
             <form target="_blank" action="https://formsubmit.co/jurgens.marpali@gmail.com" method="POST">
               <div class="form-group">
+                <div class="form-row">
                 <div class="col">
                     <input id="name-input" class="form-control" type="text" placeholder="First name*" required="required" /><input type="text" placeholder="Last name*" required="required" />
                 </div>
                 <div class="col">
-                    <input id="email-input" class="form-control" type="text" placeholder="Email*" required="required" />
+                    <input id="email-input" class="form-control" type="email" placeholder="Email*" required="required" />
                 </div>
                 <div class="col">
                     <input id="phone-input" class="form-control" type="text" placeholder="Phone Number*" required="required" />
                 </div>
+            </div>
               </div>
                 <div class="form-group">
-                    <textarea id="message-textarea" class="form-control" placeholder="Write here your message" required="required"></textarea>
+                    <textarea id="message-textarea" class="form-control" placeholder="Write here your message" rows="10" required="required"></textarea>
                 </div>
-                <button type="submit">Send message</button>
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Send message</button>
             </form>
         </div>
     </div>
