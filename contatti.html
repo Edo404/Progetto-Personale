@@ -79,32 +79,26 @@
                 <input type="radio" id="louie" name="drone" value="louie">
                 <label for="louie">Renovations</label>
             </div>
-            <form onsubmit="sendEmail(); reset(); false;">
-                <div class="form-group"><input id="name-input" type="text" placeholder="First name*" required="required" /><input type="text" placeholder="Last name*" required="required" /></div>
-                <div class="form-group"><input id="email-input" type="text" placeholder="Email*" required="required" /></div>
-                <div class="form-group"><input id="phone-input" type="text" placeholder="Phone Number*" required="required" /></div>
-                <div class="form-group"><textarea id="message-textarea" placeholder="Write here your message" required="required"></textarea></div><button type="submit">Send message</button>
+            <form target="_blank" action="https://formsubmit.co/jurgens.marpali@gmail.com" method="POST">
+              <div class="form-group">
+                <div class="col">
+                    <input id="name-input" class="form-control" type="text" placeholder="First name*" required="required" /><input type="text" placeholder="Last name*" required="required" />
+                </div>
+                <div class="col">
+                    <input id="email-input" class="form-control" type="text" placeholder="Email*" required="required" />
+                </div>
+                <div class="col">
+                    <input id="phone-input" class="form-control" type="text" placeholder="Phone Number*" required="required" />
+                </div>
+              </div>
+                <div class="form-group">
+                    <textarea id="message-textarea" class="form-control" placeholder="Write here your message" required="required"></textarea>
+                </div>
+                <button type="submit">Send message</button>
             </form>
         </div>
     </div>
 
-    <script src=" https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.gmail.com",
-                Username : "edoardogamurrini@gmail.com",
-                Password : "Porcello,.-!",
-                To : 'nikeitalia3@gmail.com',
-                From : document.getElementById("email-input").value,
-                Subject : "New Contact Form Enquiry",
-                Body : "And this is the body"
-            }).then(
-            message => alert(message)
-            );
-        }
-       
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
     <script src="index.js"></script>

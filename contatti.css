@@ -81,17 +81,17 @@ body {
 	flex-direction: column;
 }
 
-.contact-form .second-container form .form-group {
+.contact-form .second-container form .col {
 	margin-bottom: 10px;
 }
 
-.contact-form .second-container form .form-group * {
+.contact-form .second-container form .col * {
 	min-height: 55px;
 	border: 1px solid #e6e6e6;
 	padding: 0 20px;
 }
 
-.contact-form .second-container form .form-group label {
+.contact-form .second-container form .col label {
 	display: flex;
 	align-items: center;
 	width: 100%;
@@ -102,22 +102,22 @@ body {
 	margin-top: -1px;
 }
  
-.contact-form .second-container form .form-group:first-of-type input {
+.contact-form .second-container form .col:first-of-type input {
 	width: 50.1%;
 	margin-right: -5px;
 }
  
-.contact-form .second-container form .form-group input {
+.contact-form .second-container form .col input {
 	width: 100%;
 	font-size: 15px;
 	margin-top: -2px;
 }
  
-.contact-form .second-container form .form-group input::placeholder, .contact-form .second-container form .form-group textarea::placeholder {
+.contact-form .second-container form .col input::placeholder, .contact-form .second-container form .col textarea::placeholder {
 	color: #999;
 }
  
-.contact-form .second-container form .form-group textarea {
+.contact-form .second-container form .col textarea {
 	width: 100%;
 	min-height: 80px;
 	resize: none;
