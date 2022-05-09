@@ -28,4 +28,13 @@
     font-size: xx-large;color: white;
     background-color: rgba(0, 0, 0, .7);
 }
-  
+
+/***************************************************************************/
+/*                                  MEDIA FOR 1180PX                       */
+/***************************************************************************/
+@media (max-width: 1180px){
+	/* cover image responsive */
+	.home-6 {
+		height: 500px;
+	}
+}
