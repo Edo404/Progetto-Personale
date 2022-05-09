@@ -139,6 +139,17 @@ $(function() {
     }
 });
 
+
+//buttons planimerty
+function pictureCucina()
+{
+document.getElementById("right").src="images/Pontresina/cucina.jpg";
+}
+
+function pictureBagno()
+{
+document.getElementById("right").src="images/Pontresina/bagnores.jpg";
+}
 // year counter in footer 2
 const year = document.getElementById("actualYear");
 const actualYear = new Date();
