@@ -14,7 +14,7 @@ body {
 	justify-content: center;
 	align-items: flex-start;
 	background: #f2f2f2;
-    background-image: url(images/contatti.jpg);
+    background-image: url(images/contatti/contact.jpg);
     background-size: cover;
 }
 
@@ -34,7 +34,7 @@ body {
 }
  
 .contact-form .first-container {
-	background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/contatti.jpg") center center / cover no-repeat;
+	background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/contatti/contact.jpg") center center / cover no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
