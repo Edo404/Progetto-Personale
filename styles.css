@@ -136,7 +136,7 @@ body {
 .home {
   width: 100%;
   height: 100vh;
-  background-image: url(images/copertina4.jpg);
+  background-image: url(images/homepics/copertina4.jpg);
   background-position: center top;
   background-size:cover;
 }
@@ -603,7 +603,7 @@ svg {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/estate_box.jpg);
+    background-image: url(images/homepics/estate_box.jpg);
     opacity: 0.50;
   }
 
@@ -615,7 +615,7 @@ svg {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/concierge_box.jpg);
+    background-image: url(images/homepics/concierge_box.jpg);
     opacity: 0.50;
   }
 
@@ -627,7 +627,7 @@ svg {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/renovations_box.jpg);
+    background-image: url(images/homepics/renovations_box.jpg);
     opacity: 0.50;
   }
 
