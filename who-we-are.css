@@ -4,7 +4,7 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-image: url(images/squad.jpg);
+    background-image: url(images/Chisiamo/squad.jpg);
     background-position: center top;
     background-size:cover;
     text-align: center;
@@ -108,7 +108,7 @@
 		background-position: center top;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-image: url(images/padre-robbia-mobile.jpg);
+		background-image: url(images/Chisiamo/padre-robbia-mobile.jpg);
 		opacity: 0.50;
 		text-align: center;
 	  }
@@ -128,7 +128,7 @@
 		background-position: center top;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-image: url(images/robbiani-mobile.jpg);
+		background-image: url(images/Chisiamo/robbiani-mobile.jpg);
 		opacity: 0.50;
 		text-align: center;
 	  } 

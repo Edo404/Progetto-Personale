@@ -137,19 +137,19 @@
 
 /* cards background */
 .card:nth-child(1):before {
-	background-image: url(images/card1.jpg);
+	background-image: url(images/EstConRen/card1.jpg);
 }
 
 .card:nth-child(2):before {
-	background-image: url(images/card2.jpg);
+	background-image: url(images/EstConRen/card2.jpg);
 }
 
 .card:nth-child(3):before {
-	background-image: url(images/card3.jpg);
+	background-image: url(images/EstConRen/card3.jpg);
 }
 
 .card:nth-child(4):before {
-	background-image: url(images/card4.jpg);
+	background-image: url(images/EstConRen/card4.jpg);
 }
 
 .content {
@@ -246,7 +246,7 @@
 		background-position: center top;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-image: url(images/estate_sect1.jpg);
+		background-image: url(images/EstConRen/estate_sect1.jpg);
 		opacity: 0.50;
 		text-align: center;
 	}
