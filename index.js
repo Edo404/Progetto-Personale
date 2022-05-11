@@ -180,3 +180,23 @@ function nextImage() {
   // slideshowImages[currentImageCounter].style.display = "block";
   slideshowImages[currentImageCounter].style.opacity = 1;
 }
+
+const slideshowImages1 = document.querySelectorAll(".intro-slideshow2 img");
+
+const nextImageDelay1 = 3000;
+let currentImageCounter1 = 0; // setting a variable to keep track of the current image (slide)
+
+// slideshowImages[currentImageCounter].style.display = "block";
+slideshowImages1[currentImageCounter1].style.opacity = 1;
+
+setInterval(nextImage1, nextImageDelay1);
+
+function nextImage1() {
+  // slideshowImages[currentImageCounter].style.display = "none";
+  slideshowImages1[currentImageCounter1].style.opacity = 0;
+
+  currentImageCounter1 = (currentImageCounter1+1) % slideshowImages1.length;
+
+  // slideshowImages[currentImageCounter].style.display = "block";
+  slideshowImages1[currentImageCounter1].style.opacity = 1;
+}
