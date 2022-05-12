@@ -741,6 +741,10 @@ svg {
   #logo-foot{
     width: 50%;
   }
+  /*buttons*/
+  .custom-btn {
+    bottom: 20px;
+  }
 }
 
 button {
