@@ -295,7 +295,7 @@
 	--content-fontsize: 1.1em;
   
   /* Define a accent color, make sure it's readable */
-	--accentcolor: maroon;
+	--accentcolor: #790405;
 	
   /* backgroundcolor and text color of the button, unhovered.
   /* Color in hovered state is the accent color */ 
@@ -477,15 +477,15 @@
 	text-align: center;
 	border: 0;
 	border-radius: 24px;
-   	padding: 5px 22px ;
+   	padding: 20px 25px ;
    	background: var(--btntext-background);
 	color: var(--accentcolor);
 	border: 1px solid var(--accentcolor);
 	font-weight: 100;
 	transition: 1s;
 	font-size: 0.8em;
-	bottom:5%;
-	left: 43%;
+	top: 80%;
+	left: 45%;
 	transform: translate(-50%,-50%);
 	
   }
