@@ -9,7 +9,7 @@
 }
 
 body {
-	height: 100vh;
+	height: 120vh;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -162,6 +162,16 @@ body {
 	height: 7rem;
 	font-size: 15px;
 	padding: 2%;
+}
+
+#flag-icons-ch {
+	width: 30px;
+	height: 30px;
+}
+
+#flag-icons-it {
+	width: 30px;
+	height: 30px;
 }
 
 @media screen and (max-width: 800px) {
