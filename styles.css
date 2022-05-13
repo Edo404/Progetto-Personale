@@ -899,3 +899,15 @@ top: 250px;
    visibility: hidden;
   }
 }
+
+.btn-6 {
+  margin-bottom: 4em;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: #790405;
+background: #790405;
+top: 250px;
+}

@@ -1,0 +1,254 @@
+:root {
+	--d: 700ms;
+	--e: cubic-bezier(0.19, 1, 0.22, 1);
+	--font-sans: 'Rubik', sans-serif;
+	--font-serif: 'Cardo', serif;
+}
+
+/***************************************************************************/
+/*                             HOME IMAGE COVER                            */
+/***************************************************************************/
+.home-7 {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Celerina/sala2.jpg);
+    background-position: center top;
+    background-size:cover;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pontresina-title{
+    font-family: 'Lato', sans-serif;
+    width: 11em;
+    align-items: center;
+    font-size: xx-large;color: white;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+/***************************************************************************/
+/*                      SECTION IMAGE AND DESCRIPTION                      */
+/***************************************************************************/
+.about-it{
+	width: 100%;
+	height: 100%;
+	max-height: 100vh;
+}
+
+.about-it-container {
+	position: absolute;
+	width: 100%;
+}
+
+.description-image {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: 50px;
+}
+
+.about-it-image {
+	position: relative;
+	right: 5em;
+	width: 533px;
+    height: 400px; 
+
+	max-width: 100%;
+}
+
+.about-it-desc {
+	position: relative;
+	top: 3em;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	max-width: 25em;
+}
+
+/***************************************************************************/
+/*                      SECTION IMAGES ON PLANIMETRIA                      */
+/***************************************************************************/
+
+.page-content {
+	/* display: grid; */
+	/* grid-gap: 3rem; */
+	/* max-width: 80%; */
+	/* padding: 1rem; */
+
+   right: 50%;
+	margin: 0 auto;
+	font-family:  'Lato', sans-serif;
+}
+
+
+  .imageshome {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .right {
+    padding-left: 5px;
+
+  }
+
+   #right {
+    width: 550px;
+    height: 100%;
+  } 
+
+ 
+
+
+@media (min-width: 600px) {
+	.page-content {
+		grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+	.page-content {
+		grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/***************************************************************************/
+/*                                  MEDIA FOR 1180PX                       */
+/***************************************************************************/
+@media (max-width: 1180px){
+	/* cover image responsive */
+	.home-7 {
+		height: 500px;
+	}
+
+	/* mobile version section image description */
+	.about-it-container{
+		display: none;
+	}
+
+	/* mobile version of the picture */
+	.celerina-mobile{
+		visibility: visible;
+		position: absolute;
+		width: 100%;
+		height: 50vh;
+		background-position: center top;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url(images/Celerina/terrazzo.jpg);
+		opacity: 0.50;
+		text-align: center;
+	}
+	.page-content {
+		display: none;
+	}
+}
+
+
+
+/**********************/
+
+
+#floor-plan {
+	width: 500px; 
+	height: 100%;
+	position:relative;
+	margin: auto;
+	background-image: url( images/Pontresina/plan.png );
+	background-size: contain;
+   
+
+}
+#floor-plan span, #floor-plan a, #floor-plan a:before {
+	position:absolute;
+	text-decoration:none;
+}
+#floor-plan a:before {
+	content:"";
+}
+.living-room {
+	left:4.7%;
+	top:58%;
+	width:56%;
+	height: 37%;
+}
+
+/* .dining {
+	left:63%;
+	top:9%;
+	width:8%;
+	height:12%;
+}
+span.d1 {
+	left:-68%;
+	top:100%;
+	right:0;
+	height:72%;
+}
+span.d2 {
+	left:-477%;
+	top:172%;
+	right:0;
+	height:110%;
+}
+span.d3 {
+	left:-226%;
+	top:282%;
+	right:0;
+	height:110%;
+} */
+.bedroom1 {
+	left:4.7%;
+	top:41%;
+	width:43%;
+	height:16%;
+}
+.kitchen {
+	left:61%;
+	top:57.5%;
+	width:36.5%;
+	height:27.5%;
+}
+.bedroom2 {
+	left:4.7%;
+	top:1.7%;
+	width:43.7%;
+	height:24.8%;
+}
+.wc {
+	left:4.7%;
+	top:28%;
+	width:43.7%;
+	height:12%;
+}
+
+#floor-plan a:hover, #floor-plan a:hover span, #floor-plan a:hover:before {
+	background:rgba(0,0,0,0.4);
+}
+#floor-plan b {
+	position:absolute;
+	left:-999em;
+	opacity:0;
+	transtition:opacity .3s ease;
+}
+#floor-plan a:hover b {
+	opacity:1;
+	left:1em;
+	top:1em;
+	white-space:nowrap;
+	padding:5px 10px;
+	color:#000;
+	background:rgba(255,255,255,0.8);
+}
+#floor-plan a.dining:hover b{
+	top:200%;
+	left:-240%;
+}
+
+
+
+
+/***********************************************/
