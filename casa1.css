@@ -9,12 +9,12 @@
 /*                             HOME IMAGE COVER                            */
 /***************************************************************************/
 .home-7 {
-    display: flex;
+	display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-image: url(images/Pontresina/cucina1.jpg);
+    background-image: url(images/Pontresina/copertina.jpg);
     background-position: center top;
     background-size:cover;
     text-align: center;
@@ -94,11 +94,12 @@
 
   }
 
-  #right {
+   #right {
     width: 550px;
-    height: 445px;
-  }
+    height: 100%;
+  } 
 
+ 
 
 
 @media (min-width: 600px) {
@@ -140,6 +141,9 @@
 		opacity: 0.50;
 		text-align: center;
 	}
+	.page-content {
+		display: none;
+	}
 }
 
 
@@ -148,13 +152,13 @@
 
 
 #floor-plan {
-	width: 645px; 
-	height: 445px;
+	width: 500px; 
+	height: 100%;
 	position:relative;
 	margin: auto;
 	background-image: url( images/Pontresina/plan.png );
-	background-size: cover;
-    /* object-fit: contain; */
+	background-size: contain;
+   
 
 }
 #floor-plan span, #floor-plan a, #floor-plan a:before {
@@ -165,10 +169,10 @@
 	content:"";
 }
 .living-room {
-	left:4%;
-	top:4.7%;
-	width:37%;
-	height:56%;
+	left:4.7%;
+	top:58%;
+	width:56%;
+	height: 37%;
 }
 
 /* .dining {
@@ -196,28 +200,28 @@ span.d3 {
 	height:110%;
 } */
 .bedroom1 {
-	left:42.5%;
-	top:4.7%;
-	width:16.5%;
-	height:43%;
+	left:4.7%;
+	top:41%;
+	width:43%;
+	height:16%;
 }
 .kitchen {
-	left:14%;
-	top:61%;
-	width:28%;
-	height:36.5%;
+	left:61%;
+	top:57.5%;
+	width:36.5%;
+	height:27.5%;
 }
 .bedroom2 {
-	left:73%;
-	top:4.7%;
-	width:25.5%;
-	height:44%;
+	left:4.7%;
+	top:1.7%;
+	width:43.7%;
+	height:24.8%;
 }
 .wc {
-	left:59.5%;
-	top:4.7%;
-	width:12.5%;
-	height:44%;
+	left:4.7%;
+	top:28%;
+	width:43.7%;
+	height:12%;
 }
 
 #floor-plan a:hover, #floor-plan a:hover span, #floor-plan a:hover:before {
@@ -242,5 +246,7 @@ span.d3 {
 	top:200%;
 	left:-240%;
 }
+
+
 
 /***********************************************/

@@ -141,15 +141,44 @@ $(function() {
 
 
 //buttons planimerty
-function pictureCucina()
-{
-document.getElementById("right").src="images/Pontresina/cucina.jpg";
+function pictureCucina(){
+  setTimeout(function() {
+    document.getElementById("right").src="images/Pontresina/cucina1.jpg";
+  });
 }
+
+// function (pictureCucina()
+// {
+// document.getElementById("right").src="images/Pontresina/cucina1.jpg";
+// },1000);
 
 function pictureBagno()
 {
-document.getElementById("right").src="images/Pontresina/bagnores.jpg";
+document.getElementById("right").src="images/Pontresina/bagno.jpg";
 }
+
+function pictureBedroom1()
+{
+document.getElementById("right").src="images/Pontresina/camera.jpg";
+}
+
+function pictureBedroom2()
+{
+document.getElementById("right").src="images/Pontresina/cameramat.jpg";
+}
+
+function pictureSala()
+{
+document.getElementById("right").src="images/Pontresina/sala.jpg";
+}
+
+
+
+
+
+
+
+
 // year counter in footer 2
 const year = document.getElementById("actualYear");
 const actualYear = new Date();
