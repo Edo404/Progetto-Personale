@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="casa2.css">
     <link rel="stylesheet" href="styles.css">
     <title>Celerina</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 
 <body>
@@ -36,8 +40,8 @@
     </div>
 
     <!-- home image -->
-    <section class="home-7">
-        <div class="pontresina-title">
+    <section class="home-8">
+        <div class="celerina-title">
             <h1>CELERINA</h1>
             </div>
     </section>
@@ -52,7 +56,7 @@
             </div>
             <div class="description-image">
                 <div class="about-it-img">
-                    <img src="images/Celerina/terrazzo.jpg" alt="pontresina" class="about-it-image">
+                    <img src="images/Celerina/terrazzo.jpg" alt="celerina" class="about-it-image">
                 </div>
                 <div class="about-it-desc">
                     <p style="color: white;">4-star hotel in Selva for your holiday in the Dolomites. We wish you a very warm welcome to our Chalet S Dolomites in the heart of the sking and hiking area Val Gardena. Do you want to know what awaits you in our hotel in Selva? Plenty of time to fully enjoy life and the splendid Dolomites, a UNESCO World Heritage Site. The feeling of being at home, just more beautiful. The joy of being active in a unique mountain world during any season of the year. And afterwards pure recreation in our wellness area 'Alpin Vita Sana' and refined gourmet menus of course. Sounds tempting, doesn't it</p>
@@ -74,7 +78,7 @@
         <div class="separator">
             <div class="line">
             </div>
-            <h1 class="font thinked" style="color: aliceblue;">GALLERY</h1>
+            <h1 class="font thinked" style="color: aliceblue;">PLANIMETRY</h1>
         </div>
 
         <!-- Planimetria e foto -->
@@ -115,9 +119,92 @@
             <img id="right" src="images/Pontresina/sala.jpg" alt="">
           </section>
         
+     </div>  -->
+    </section> 
 
+    <div class="separator">
+        <div class="line">
+        </div>
+        <h1 class="font thinked" style="color: aliceblue;">GALLERY</h1>
     </div>
-    </section> -->
+
+    
+    <div
+      style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+      class="swiper mySwiper2"
+    >
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <div thumbsSlider="" class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+        </div>
+      </div>
+    </div>
+
+
+
 
     <!-- footer -->
     <footer class="site-footer">
@@ -188,6 +275,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
     <script src="index.js"></script>
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper", {
+         loop: true,
+         spaceBetween: 10,
+         slidesPerView: 4,
+         freeMode: true,
+         watchSlidesProgress: true,
+       });
+       var swiper2 = new Swiper(".mySwiper2", {
+         loop: true,
+         spaceBetween: 10,
+         navigation: {
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+         },
+         thumbs: {
+           swiper: swiper,
+         },
+       });
+     </script>
 </body>
 
 </html>
