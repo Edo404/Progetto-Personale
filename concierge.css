@@ -251,3 +251,99 @@
 		text-align: center;
 	}
 }
+
+
+
+
+   
+   #slider {
+	 position: relative;
+	 width: 900px;
+	 height: 500px;
+	 margin: 100px auto;
+	 overflow: hidden;
+   
+	 box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+   }
+   #slider ul {
+	 position: relative;
+	 list-style: none;
+	 height: 100%;
+	 width: 10000%;
+	 padding: 0;
+	 margin: 0;
+   
+	 transition: all 750ms ease;
+	 left: 0;
+   }
+   #slider ul li {
+	 position: relative;
+	 height: 100%;
+   
+	 float: left;
+   }
+   #slider ul li img{
+	 width: 900px;
+	 height: 500px;
+   
+   }
+   
+
+   #prev, #next {
+	   display: none;
+   }
+
+   quote{
+	   position: absolute;
+	   left: 47%;
+	   top: 6rem;
+	   color: #790405;
+	   font-family: 'Lato';
+   }
+
+   .slider__txt{
+	   position: absolute;
+	   top: 40%;
+	   left: 10%;
+	   font-family: 'Lato';
+   }
+   @media (max-width: 900px) {
+	#slider {
+		width: 500px;
+	 	height: 300px;
+    }
+	#slider ul li img{
+		width: 500px;
+		height: 300px;
+	  
+	}
+	  
+    quote{
+		top: 3rem;
+	}
+ 
+	.slider__txt{
+		left: 2%;
+	}
+}
+
+@media (max-width: 500px) {
+	#slider {
+		width: 280px;
+	 	height: 150px;
+    }
+	#slider ul li img{
+		width: 280px;
+		height: 150px;
+	}
+	  
+	quote{
+		top: 1rem;
+		font-size: 50px;
+	}
+ 
+	.slider__txt{
+		left: 2%;
+		font-size: 12px;
+	}
+}

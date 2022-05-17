@@ -229,3 +229,7 @@ function nextImage1() {
   // slideshowImages[currentImageCounter].style.display = "block";
   slideshowImages1[currentImageCounter1].style.opacity = 1;
 }
+
+
+
+

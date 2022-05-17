@@ -8,6 +8,7 @@
     <link rel="icon" href="images/white.ico" type="image/icon type">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="concierge.css">
+
 </head>
 
 <body>
@@ -72,7 +73,7 @@
         <div class="separator">
             <div class="line">
             </div>
-            <h1 class="font thinked" style="color: aliceblue;">STEP BY STEP</h1>
+            <h1 class="font thinked" style="color: aliceblue;">I NOSTRI SERVIZI</h1>
         </div>
 
         <!-- cards -->
@@ -105,7 +106,7 @@
     </section>
 
     <!-- slider reviews -->
-    <div class="slider">
+    <!-- <div class="slider">
         <div class="timer"></div>
         <div class="slideshow">
             <div class="slide">
@@ -129,7 +130,52 @@
                 <h2 class="slider__caption">Rhonda | NylonCraft</h2>
             </div>
         </div>
+    </div> -->
+
+
+
+    <div class="separator">
+        <div class="line">
+        </div>
+        <h1 class="font thinked" style="color: aliceblue;">RECENSIONI DEI SERVIZI</h1>
     </div>
+
+ 
+         <div id="slider">
+           <ul id="slideWrap">
+             <li>
+                <quote>&rdquo;</quote>
+                <p class="slider__txt">We love you guys. It's easy to order, we get shipments quick <br> and my rep solves tough problems the right way. We get answers that work.</p>
+                <img src="https://wallpaperaccess.com/full/1154341.jpg" alt="">
+            </li>
+             <li>
+                <quote>&rdquo;</quote>
+                <p class="slider__txt">We love you guys. It's easy to order, we get shipments quick <br> and my rep solves tough problems the right way. We get answers that work.</p>
+                <img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg" alt="">
+            </li>
+             <li>
+                <quote>&rdquo;</quote>
+                <p class="slider__txt">We love you guys. It's easy to order, we get shipments quick <br> and my rep solves tough problems the right way. We get answers that work.</p>
+                 <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700291270.jpg" alt=""></li>
+             <li>
+                <quote>&rdquo;</quote>
+                <p class="slider__txt">We love you guys. It's easy to order, we get shipments quick <br> and my rep solves tough problems the right way. We get answers that work.</p>
+                 <img src="https://i.pinimg.com/originals/2b/de/de/2bdede0647e3cdf75b44ea33723201d9.jpg" alt="">
+            </li>
+             <li>
+                <quote>&rdquo;</quote>
+                <p class="slider__txt">We love you guys. It's easy to order, we get shipments quick <br> and my rep solves tough problems the right way. We get answers that work.</p>
+                 <img src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg" alt="">
+            </li>
+           </ul>
+           <a id="prev" href="#">&#8810;</a>
+           <a id="next" href="#">&#8811;</a>
+         </div>
+       
+       
+
+
+
 
     <!-- footer -->
     <footer class="site-footer">
@@ -197,5 +243,66 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
     <script src="index.js"></script>
+
+    <script>
+        var responsiveSlider = function() {
+    
+    var slider = document.getElementById("slider");
+    var sliderWidth = slider.offsetWidth;
+    var slideList = document.getElementById("slideWrap");
+    var count = 1;
+    var items = slideList.querySelectorAll("li").length;
+    var prev = document.getElementById("prev");
+    var next = document.getElementById("next");
+    
+    window.addEventListener('resize', function() {
+      sliderWidth = slider.offsetWidth;
+    });
+    
+    var prevSlide = function() {
+      if(count > 1) {
+        count = count - 2;
+        slideList.style.left = "-" + count * sliderWidth + "px";
+        count++;
+      }
+      else if(count = 1) {
+        count = items - 1;
+        slideList.style.left = "-" + count * sliderWidth + "px";
+        count++;
+      }
+    };
+    
+    var nextSlide = function() {
+      if(count < items) {
+        slideList.style.left = "-" + count * sliderWidth + "px";
+        count++;
+      }
+      else if(count = items) {
+        slideList.style.left = "0px";
+        count = 1;
+      }
+    };
+    
+    next.addEventListener("click", function() {
+      nextSlide();
+    });
+    
+    prev.addEventListener("click", function() {
+      prevSlide();
+    });
+    
+    setInterval(function() {
+      nextSlide()
+    }, 5000);
+    
+    };
+    
+    window.onload = function() {
+    responsiveSlider();
+    }
+    
+    </script>
+   
+ 
 </body>
 </html>
