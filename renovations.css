@@ -251,3 +251,28 @@
 		text-align: center;
 	}
 }
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 5px;
+	grid-auto-flow: dense;
+}
+
+.gallery-container img{
+	margin-left: 5%;
+	width: 20em;
+	object-fit: cover;
+	object-position: 50% 50%;
+}
+
+@media screen and (max-width: 1180px) {
+	.grid-container {
+		grid-template-columns : repeat(2, 1fr);
+	}
+
+	.gallery-container img {
+		margin-left: 7%;
+		width: 10em;
+	}
+}
