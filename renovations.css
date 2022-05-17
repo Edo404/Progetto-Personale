@@ -252,7 +252,7 @@
 	}
 }
 
-.grid-container {
+/* .grid-container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 5px;
@@ -264,9 +264,9 @@
 	width: 20em;
 	object-fit: cover;
 	object-position: 50% 50%;
-}
+} */
 
-@media screen and (max-width: 1180px) {
+/* @media screen and (max-width: 1180px) {
 	.grid-container {
 		grid-template-columns : repeat(2, 1fr);
 	}
@@ -275,4 +275,59 @@
 		margin-left: 7%;
 		width: 10em;
 	}
-}
+} */
+
+.image-grid {
+	padding: 12px;
+  }
+  
+  .image-row {
+	display: flex;  
+  }
+  
+  .image-row .image {
+	margin: 12px;
+	height: 540px;  
+  }
+  
+  .image { 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+  
+  }
+  
+  .image-01 {
+	background-image: url('images/renovations/ristrutturazione-2.jpg'); 
+	flex: 1;  
+  }
+  
+  .image-02 {
+	background-image: url('images/renovations/ristrutturazione-3.jpg'); 
+	flex: 1;  
+  }
+  
+  .image-03 {
+	background-image: url('images/renovations/ristrutturazione-4.jpg');  
+	flex: 1;  
+  }
+  
+  .image-04 {
+	background-image: url('images/renovations/ristrutturazione-1.jpg'); 
+	flex: 2;
+  }
+  
+  .image-05 {
+	background-image: url('images/renovations/ristrutturazione-5.jpg');
+	flex: 2;
+  }
+  
+  @media screen and (max-width: 400px) {
+	.image-row {
+	  flex-direction: column;
+	}
+	
+	.image-row .image {
+	  flex-basis: auto;
+	}
+  }

@@ -337,11 +337,13 @@ span.d3 {
 
 .slides {
     padding: 0;
-    width: 609px;
-    height: 420px;
+    width: 45em;
+	
+    height: 30em;
     display: block;
     margin: 0 auto;
     position: relative;
+	bottom: 7em;
 }
 
 .slides * {
@@ -360,8 +362,8 @@ span.d3 {
 .slide {
     top: 0;
     opacity: 0;
-    width: 609px;
-    height: 420px;
+    width: 30em;
+    height: 20em;
     display: block;
     position: absolute;
 	
@@ -385,7 +387,7 @@ span.d3 {
 	opacity: 0;
     z-index: 9;
     cursor: pointer;
-	top: 3em;
+	top: 4em;
     transition: opacity .2s;
 
     color: #FFF;
@@ -452,4 +454,23 @@ input#img-5:checked ~ .nav-dots label#img-dot-5 {
 	.slider2-foto {
 		display: none;
 	}
+
 }
+
+
+
+@media (max-width: 720px) {
+	.slides {
+		width: 20em;
+		height: 15em;
+		bottom: 4em;
+	}
+
+	.nav label {
+		width: 50px;
+		height: 2em;
+		top: 1.3em;
+	}
+}
+
+/***********************************************/
