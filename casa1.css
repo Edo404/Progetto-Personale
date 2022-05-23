@@ -348,13 +348,31 @@ span.d3 {
 
 .slides {
     padding: 0;
-    width: 45em;
-	
-    height: 30em;
+    width: 70em;
+    height: 45em;
     display: block;
     margin: 0 auto;
     position: relative;
 	bottom: 7em;
+}
+
+@media (max-width: 1120px){
+	.slides {
+		padding: 0;
+		width: 45em;
+		
+		height: 30em;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		bottom: 7em;
+	}
+	.nav label {
+		top: 3em;
+	}
+	
+
+	
 }
 
 .slides * {
@@ -398,7 +416,7 @@ span.d3 {
 	opacity: 0;
     z-index: 9;
     cursor: pointer;
-	top: 4em;
+	top: 6em;
     transition: opacity .2s;
 
     color: #FFF;
