@@ -86,7 +86,7 @@
 
 @media (min-width: 800px) {
 	.page-content {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -148,9 +148,7 @@
 	background-image: url(images/EstConRen/card3.jpg);
 }
 
-.card:nth-child(4):before {
-	background-image: url(images/EstConRen/card4.jpg);
-}
+
 
 .content {
 	position: relative;

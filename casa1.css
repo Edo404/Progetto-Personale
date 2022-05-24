@@ -155,7 +155,27 @@
         font-size: 17px;
         top: -5em;
       }
+
+	  .house-button {
+		  display: none;
+	  }
+
+	  .house-button-mobile {
+		display: block;
+
+		position: relative;
+		bottom: 16em;
+	  }
 }
+
+@media (min-width: 1180px) {
+	.house-button-mobile {
+		
+		display: none;
+	}
+}
+
+
 
 
 
@@ -538,6 +558,12 @@ input#img-5:checked ~ .nav-dots label#img-dot-5 {
 
 .details ul{
 	padding-left: 0;
+}
+
+.house-button {
+	position: relative;
+	bottom: 15em;
+	
 }
 
 /**********************/

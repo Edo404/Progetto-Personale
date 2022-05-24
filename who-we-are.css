@@ -180,3 +180,19 @@
 .video-paragraph-1 {
     font-size: 17px;
 }
+
+.why-r3 {
+	background-image: url(images/sfondo_logo.png);
+	width: 100%;
+  height: 100vh;
+  background-position: center top;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 550px) {
+
+	.why-us {
+		font-size: 13px;
+	}
+}
