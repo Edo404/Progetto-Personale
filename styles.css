@@ -747,7 +747,11 @@ svg {
   }
   /*buttons*/
   .custom-btn {
-    bottom: 20px;
+    bottom: 15px;
+  }
+
+  .background-logo{
+    height: 60rem;
   }
 }
 
