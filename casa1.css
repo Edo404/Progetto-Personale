@@ -516,6 +516,11 @@ input#img-5:checked ~ .nav-dots label#img-dot-5 {
       }
 
 }
+.house-button {
+	position: relative;
+	bottom: 15em;
+	
+}
 
 
 
@@ -550,6 +555,9 @@ input#img-5:checked ~ .nav-dots label#img-dot-5 {
 }
 
 
+
+
+/******************DETAILS*********************/
 .details {
     font-family: 'Lato', sans-serif;
     color: white;
@@ -560,10 +568,5 @@ input#img-5:checked ~ .nav-dots label#img-dot-5 {
 	padding-left: 0;
 }
 
-.house-button {
-	position: relative;
-	bottom: 15em;
-	
-}
 
-/**********************/
+
