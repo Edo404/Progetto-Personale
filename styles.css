@@ -372,6 +372,7 @@ body {
   color: #fff;
   opacity: .5;
   font-family: 'Lato';
+  font-style: italic;
 }
 
 .slider__txt {
