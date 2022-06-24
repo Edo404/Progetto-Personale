@@ -230,6 +230,23 @@
 		height: 500px;
 	}
 
+	.box-phone{
+		position: relative;
+		top: 5em;
+		font-family: 'Lato', sans-serif;
+		font-size: 0.80em;
+		color: white;
+		text-align: center;
+		max-width: 50rem;
+		margin: 0 auto;
+	  }
+	
+	  .h1-phone {
+		font-size: 40px;
+		margin-top: 0.5em;
+	  }
+
+
 	/* mobile version section image description */
 	.about-it-container{
 		display: none;
@@ -256,6 +273,7 @@
 		background-color: #000;
 		
 	}
+
 }
 
 /***************************************************************************/
@@ -326,6 +344,7 @@
 	overflow: hidden;
 	box-sizing: border-box;
 	background: #efefef;
+	font-family: 'Lato', sans-serif;
 	transition: 0.5s;
   
   }
@@ -507,9 +526,11 @@
 	.linea {
 		display: none;
 	}
+	
 }
 
 .ghost-btn a {
 	text-decoration: none;
 	color: #000;
 }
+

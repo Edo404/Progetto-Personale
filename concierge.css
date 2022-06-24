@@ -86,7 +86,7 @@
 
 @media (min-width: 800px) {
 	.page-content {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -104,7 +104,7 @@
 
 @media (min-width: 600px) {
 	.card {
- 		height: 350px;
+		height: 350px;
     }
 }
 
@@ -148,9 +148,7 @@
 	background-image: url(images/EstConRen/card3.jpg);
 }
 
-.card:nth-child(4):before {
-	background-image: url(images/EstConRen/card4.jpg);
-}
+
 
 .content {
 	position: relative;
@@ -185,39 +183,39 @@
 	.card:after {
 		transform: translateY(0);
     }
-
+	
 	.content {
 		transform: translateY(calc(100% - 4.5rem));
     }
-
+	
 	.content > *:not(.title) {
 		opacity: 0;
 		transform: translateY(1rem);
 		transition: transform var(--d) var(--e), opacity var(--d) var(--e);
     }
-
+	
 	.card:hover, .card:focus-within {
 		align-items: center;
     }
-
+	
 	.card:hover:before, .card:focus-within:before {
 		transform: translateY(-4%);
     }
-
+	
 	.card:hover:after, .card:focus-within:after {
 		transform: translateY(-50%);
     }
-
+	
 	.card:hover .content, .card:focus-within .content {
 		transform: translateY(0);
     }
-
+	
 	.card:hover .content > *:not(.title), .card:focus-within .content > *:not(.title) {
 		opacity: 1;
 		transform: translateY(0);
 		transition-delay: calc(var(--d) / 8);
     }
-
+	
 	.card:focus-within:before, .card:focus-within:after, .card:focus-within .content, .card:focus-within .content > *:not(.title) {
 		transition-duration: 1s;
     }
@@ -250,6 +248,22 @@
 		opacity: 0.50;
 		text-align: center;
 	}
+	.box-phone{
+		position: relative;
+		top: 5em;
+		font-family: 'Lato', sans-serif;
+		font-size: 1em;
+		color: white;
+		text-align: center;
+		max-width: 50rem;
+		margin: 0 auto;
+	  }
+	
+	  .h1-phone {
+		font-size: 40px;
+		margin-top: 0.5em;
+	  }
+
 }
 
 
