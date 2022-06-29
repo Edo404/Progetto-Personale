@@ -198,10 +198,10 @@
 	content:"";
 }
 .living-room {
-	left:4.7%;
-	top:58%;
-	width:56%;
-	height: 37%;
+	left:24%;
+	top:12%;
+	width:28%;
+	height: 33%;
 }
 
 /* .dining {
@@ -228,29 +228,43 @@ span.d3 {
 	right:0;
 	height:110%;
 } */
-.bedroom1 {
+/* .bedroom1 {
 	left:4.7%;
 	top:41%;
-	width:43%;
+	width:45%;
 	height:16%;
-}
+} */
 .kitchen {
-	left:61%;
-	top:57.5%;
+	left:52%;
+	top:12%;
 	width:36.5%;
-	height:27.5%;
+	height:30%;
 }
 .bedroom2 {
-	left:4.7%;
-	top:1.7%;
-	width:43.7%;
-	height:24.8%;
+	left:53%;
+	top:61.5%;
+	width:35%;
+	height:30.5%;
 }
 .wc {
-	left:4.7%;
-	top:28%;
-	width:43.7%;
-	height:12%;
+	left:53%;
+	top:43%;
+	width:35%;
+	height:17.5%;
+}
+
+.closet {
+	left:5%;
+	top:44.5%;
+	width:18%;
+	height:14%;
+}
+
+.balcony {
+	left:57%;
+	top:4.5%;
+	width:31%;
+	height:6%;
 }
 
 #floor-plan a:hover, #floor-plan a:hover span, #floor-plan a:hover:before {
@@ -260,7 +274,7 @@ span.d3 {
 	position:absolute;
 	left:-999em;
 	opacity:0;
-	transtition: opacity .3s ease;
+	transition: opacity .3s ease;
 }
 #floor-plan a:hover b {
 	opacity:1;
