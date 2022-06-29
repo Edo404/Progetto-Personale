@@ -159,12 +159,12 @@ document.getElementById("right").src="images/Pontresina/bagno.jpg";
 
 function pictureBedroom1()
 {
-document.getElementById("right").src="images/Pontresina/camera.jpg";
+document.getElementById("right").src="images/Pontresina/cameramat.jpg";
 }
 
 function pictureBedroom2()
 {
-document.getElementById("right").src="images/Pontresina/cameramat.jpg";
+document.getElementById("right").src="images/Pontresina/camera.jpg";
 }
 
 function pictureSala()
