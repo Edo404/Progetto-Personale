@@ -96,8 +96,8 @@
   }
 
    #right {
-    width: 1000px;
-    height: 700px;
+    width: 950px;
+    height: 650px;
 	
   } 
 
@@ -183,10 +183,10 @@
 
 #floor-plan {
 	width: 500px; 
-	height: 700px;
+	height: 650px;
 	position:relative;
 	margin: auto;
-	background-image: url( images/Silsmaria/Sils\ maria.png );
+	background-image: url( images/Silsmaria/silsmaria.png );
 	background-size: contain;
 	/* background-repeat: no-repeat; */
 	padding-left: -5em;
@@ -569,3 +569,25 @@ input#img-5:checked ~ .nav-dots label#img-dot-5 {
 }
 
 /**********************/
+
+@media (max-width: 1500px) {
+
+	#right {
+		width: 714px;
+		height: 414px;
+		
+	  } 
+	  #floor-plan {
+		width: 300px; 
+		height: 414px;
+		position:relative;
+		margin: auto;
+		background-image: url( images/Silsmaria/silsmaria.png );
+		background-size: contain;
+		padding-left: -5em;
+		
+	   
+	
+	}
+	
+}

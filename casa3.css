@@ -77,7 +77,7 @@
 	/* max-width: 80%; */
 	/* padding: 1rem; */
 
-    right: 50%;
+   right: 50%;
 	margin: 0 auto;
 	font-family:  'Lato', sans-serif;
 }
@@ -85,25 +85,19 @@
 
   .imageshome {
     padding-top: 100px;
-     display: flex; 
-	width: 100%;
+    display: flex;
     justify-content: center;
   }
 
-  .right {
-	width: 1000px;
-	padding-top: 750px;
-	
 
-
-
-  }
 
    #right {
     width: 1000px;
-    height: 100%;
+    height: 700px;
 	
   } 
+
+ 
 
  
 
@@ -186,13 +180,16 @@
 
 
 #floor-plan {
-	width: 50%; 
-	height: 67%;
-	position:absolute;
+	width: 500px; 
+	height: 700px;
+	position:relative;
 	margin: auto;
-	background-image: url( images/Samedan/samedan.png );
+	background-image: url( images/Samedan/Samedan.png );
 	background-size: contain;
- 
+	/* background-repeat: no-repeat; */
+	padding-left: -5em;
+	
+   
 
 }
 #floor-plan span, #floor-plan a, #floor-plan a:before {
@@ -570,3 +567,25 @@ input#img-5:checked ~ .nav-dots label#img-dot-5 {
 }
 
 /**********************/
+
+@media (max-width: 1500px) {
+
+	#right {
+		width: 714px;
+		height: 414px;
+		
+	  } 
+	  #floor-plan {
+		width: 300px; 
+		height: 414px;
+		position:relative;
+		margin: auto;
+		background-image: url( images/Samedan/Samedan.png );
+		background-size: contain;
+		padding-left: -5em;
+		
+	   
+	
+	}
+	
+}

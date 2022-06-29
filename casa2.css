@@ -83,21 +83,20 @@
 }
 
 
-  .imageshome {
+.imageshome {
     padding-top: 100px;
     display: flex;
     justify-content: center;
   }
 
-  .right {
-    padding-left: 5px;
 
-  }
 
    #right {
-    width: 550px;
-    height: 100%;
+    width: 950px;
+    height: 650px;
+	
   } 
+
 
  
 
@@ -180,11 +179,14 @@
 
 #floor-plan {
 	width: 500px; 
-	height: 100%;
+	height: 650px;
 	position:relative;
 	margin: auto;
-	background-image: url( images/Pontresina/plan.png );
+	background-image: url( images/Celerina/Affito\ Celerina.png );
 	background-size: contain;
+	/* background-repeat: no-repeat; */
+	padding-left: -5em;
+	
    
 
 }
@@ -564,3 +566,25 @@ input#img-5:checked ~ .nav-dots label#img-dot-5 {
 }
 
 /**********************/
+@media (max-width: 1500px) {
+
+	#right {
+		width: 680px;
+		height: 380px;
+		
+	  } 
+	  #floor-plan {
+		width: 300px; 
+		height: 380px;
+		position:relative;
+		margin: auto;
+		background-image: url( images/Celerina/Affito\ Celerina.png );
+		background-size: contain;
+		
+		padding-left: -5em;
+		
+	   
+	
+	}
+	
+}
