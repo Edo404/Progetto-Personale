@@ -106,6 +106,9 @@
                         <a class="kitchen" onclick="pictureCucina()"><b>Kitchen</b></a>
                         <a class="bedroom2" href="#i" onclick="pictureBedroom2()"><b>Bedroom</b></a>
                         <a class="wc" href="#j" onclick="pictureBagno()"><b>WC</b></a>
+                        <a class="wc2" href="#j" onclick="pictureBagno1()"><b>WC</b></a>
+                        <a class="bedroom3" href="#i" onclick="pictureBedroom3()"><b>Bedroom</b></a>
+                        <a class="terrace" href="#a" onclick="pictureTerrace()"><b>Terrace</b></a>
                     </nav>
                 </section>
                 <section class="right">
@@ -386,6 +389,43 @@
            swiper: swiper,
          },
        });
+
+       //buttons planimerty
+       function pictureCucina(){
+          setTimeout(function() {
+            document.getElementById("right").src="images/Celerina/cucina.jpg";
+          });
+        }
+
+        // function (pictureCucina()
+        // {
+        // document.getElementById("right").src="images/Pontresina/cucina1.jpg";
+        // },1000);
+
+        function pictureBagno()
+        {
+        document.getElementById("right").src="images/Celerina/bagno.jpg";
+        }
+
+        function pictureBedroom2()
+        {
+        document.getElementById("right").src="images/Celerina/bedroom2.jpg";
+        }
+
+        function pictureSala()
+        {
+        document.getElementById("right").src="images/Celerina/sala2.jpg";
+        }
+
+        function pictureSgabuzzino()
+        {
+        document.getElementById("right").src="images/Celerina/sgabuzzino.jpg";
+        }
+        
+        function pictureTerrazzo()
+        {
+        document.getElementById("right").src="images/Celerina/balcone.jpg";
+        }
      </script>
 </body>
 
