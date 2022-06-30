@@ -430,10 +430,10 @@ span.d3 {
 .slide-container { display: block; }
 
 .slide {
-    top: 0;
+    top: 7em;
     opacity: 0;
-    width: 30em;
-    height: 20em;
+    width: 70em;
+    height: 45em;
     display: block;
     position: absolute;
 	

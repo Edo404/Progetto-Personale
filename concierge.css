@@ -364,14 +364,14 @@
 } */
 
 /* Slideshow container */
-.slideshow-container {
+.slideshoww-containers {
 	position: relative;
 	background-image: url(images/recensioni.png);
 	margin-top: 100px;
   }
   
   /* Slides */
-  .mySlides {
+  .Slidesmy {
 	display: none;
 	padding: 15%;
 	text-align: center;
@@ -388,7 +388,7 @@
   }
   
   /* Add a blue color to the author */
-  .author {
+  .author8 {
 	font-family: "Lato", sans-serif;
 	color: grey;
   }
