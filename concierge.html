@@ -161,36 +161,42 @@
     </div>
 
  
-         <div id="slider">
-           <ul id="slideWrap">
-             <li>
-                <quote>&rdquo;</quote>
-                <p class="slider__txt">We love you guys. It's easy to order, we get shipments quick <br> and my rep solves tough problems the right way. We get answers that work.</p>
-                <img src="https://wallpaperaccess.com/full/1154341.jpg" alt="">
-            </li>
-             <li>
-                <quote>&rdquo;</quote>
-                <p class="slider__txt">We love you guys. It's easy to order, we get shipments quick <br> and my rep solves tough problems the right way. We get answers that work.</p>
-                <img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg" alt="">
-            </li>
-             <li>
-                <quote>&rdquo;</quote>
-                <p class="slider__txt">We love you guys. It's easy to order, we get shipments quick <br> and my rep solves tough problems the right way. We get answers that work.</p>
-                 <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700291270.jpg" alt=""></li>
-             <li>
-                <quote>&rdquo;</quote>
-                <p class="slider__txt">We love you guys. It's easy to order, we get shipments quick <br> and my rep solves tough problems the right way. We get answers that work.</p>
-                 <img src="https://i.pinimg.com/originals/2b/de/de/2bdede0647e3cdf75b44ea33723201d9.jpg" alt="">
-            </li>
-             <li>
-                <quote>&rdquo;</quote>
-                <p class="slider__txt">We love you guys. It's easy to order, we get shipments quick <br> and my rep solves tough problems the right way. We get answers that work.</p>
-                 <img src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg" alt="">
-            </li>
-           </ul>
-           <a id="prev" href="#">&#8810;</a>
-           <a id="next" href="#">&#8811;</a>
-         </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <quote>&rdquo;</quote>
+          <q>
+            R3 Living supports us in looking after our holiday apartment in the Engadin. Since we are not always on site ourselves, 
+            it is reassuring to know that a reliable partner could take care of all matters that arise, such as repairs or cleaning. 
+            R3 Living acts as the sole contact in the event of maintenance work (example: installation of a washing tower in the apartment) 
+            and takes care of everything in a very professional manner. We can warmly recommend the services of R3 Living.</q>
+          <p class="author">- T. W.</p>
+        </div>
+
+        <div class="mySlides">
+            <quote>&rdquo;</quote>
+          <q>Recensione servizio 2</q>
+          <p class="author">- C. B.</p>
+        </div>
+        
+        <div class="mySlides">
+            <quote>&rdquo;</quote>
+          <q>Recensione servizio 3</q>
+          <p class="author">- M. B.</p>
+        </div>
+        
+        
+        
+        
+        
+        </div>
+        
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    
        
        
 
@@ -320,6 +326,40 @@
     responsiveSlider();
     }
     
+
+    //slider reviews
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+window.onload= function () {
+ setInterval(function(){ 
+     plusSlides(1);
+ }, 5000);
+ }
+
     </script>
    
  

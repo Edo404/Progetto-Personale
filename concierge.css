@@ -268,7 +268,7 @@
 
 
 
-
+/* 
    
    #slider {
 	 position: relative;
@@ -320,6 +320,7 @@
 	   top: 40%;
 	   left: 10%;
 	   font-family: 'Lato';
+	   color: #fff;
    }
    @media (max-width: 900px) {
 	#slider {
@@ -360,4 +361,43 @@
 		left: 2%;
 		font-size: 12px;
 	}
-}
+} */
+
+/* Slideshow container */
+.slideshow-container {
+	position: relative;
+	background-image: url(images/recensioni.png);
+	margin-top: 100px;
+  }
+  
+  /* Slides */
+  .mySlides {
+	display: none;
+	padding: 15%;
+	text-align: center;
+  }
+  
+  
+  
+  /* Add an italic font style to all quotes */
+  q {
+	font-family: "Lato", sans-serif;
+	color: #fff;
+	font-size: 22px;
+	font-style: italic;
+  }
+  
+  /* Add a blue color to the author */
+  .author {
+	font-family: "Lato", sans-serif;
+	color: grey;
+  }
+  
+  quote {
+	font-family: 'Lato';
+	font-size: 100px;
+	color: #790405;
+	position: absolute;
+	top: 10%;
+	left: 49%;
+  }
