@@ -375,53 +375,11 @@ body {
   font-style: italic;
 }
 
-.slider__txt {
-  text-align: center;
-  font-size: 22px;
-  font-family: 'Lato';
-  color: #fff;
-}
 
-quote {
-  font-family: 'Lato';
-  font-size: 100px;
-  color: #B18904;
-  margin-bottom: 0;
-}
 
-.slider {
-  background-image: url(images/recensioni.png);
-  background-size: auto;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  height: 600px;
-  top: 10rem;
-  bottom: 10rem;
-}
 
-.slideshow {
-  position: relative;
-  height: 100%;
-}
 
-.slide {
-  width: 100%;
-  height: 100%;
-  color:#ddd;
-  text-align: center;
-  font-family: 'Lato';
-  position: absolute;
-  top: 25%;
-}
 
-.slide {
-  display: none;
-}
-
-.slider {
-  margin-bottom: 150px;
-}
 
 /***************************************************************************/
 /*                                  FOOTER                                 */
@@ -906,6 +864,12 @@ top: 250px;
   .intro-slideshow {
    visibility: hidden;
   }
+
+  quote {
+  
+    display: none;
+  
+  }
 }
 
 .btn-6 {
@@ -922,4 +886,48 @@ top: 250px;
 
 .collegamenti{
   color: white;
+}
+
+
+
+/****************/
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background-image: url(images/recensioni.png);
+  margin-top: 100px;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 15%;
+  text-align: center;
+}
+
+
+
+/* Add an italic font style to all quotes */
+q {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-size: 22px;
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  font-family: "Lato", sans-serif;
+  color: grey;
+}
+
+quote {
+  font-family: 'Lato';
+  font-size: 100px;
+  color: #B18904;
+  position: absolute;
+  top: 10%;
+  left: 49%;
 }
