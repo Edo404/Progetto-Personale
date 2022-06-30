@@ -346,6 +346,7 @@
 	background: #efefef;
 	font-family: 'Lato', sans-serif;
 	transition: 0.5s;
+	height: 600px;
   
   }
   
@@ -535,3 +536,6 @@
 	color: #000;
 }
 
+.footer-links li{
+	color: #000;
+}
