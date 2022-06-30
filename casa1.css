@@ -373,7 +373,7 @@ span.d3 {
 
 .slides {
     padding: 0;
-    width: 70em;
+    width: 30em;
     height: 45em;
     display: block;
     margin: 0 auto;
@@ -383,14 +383,8 @@ span.d3 {
 
 @media (max-width: 1120px){
 	.slides {
-		padding: 0;
-		width: 45em;
 		
-		height: 30em;
-		display: block;
-		margin: 0 auto;
-		position: relative;
-		bottom: 7em;
+		bottom: 9em;
 	}
 	.nav label {
 		top: 3em;
@@ -534,14 +528,14 @@ input#img-7:checked ~ .nav-dots label#img-dot-7 {
 @media (max-width: 720px) {
 	.slides {
 		width: 20em;
-		height: 15em;
-		bottom: 4em;
+		height: 35em;
+		bottom: 9em;
 	}
 
 	.nav label {
 		width: 50px;
 		height: 2em;
-		top: 1.3em;
+		top: 4.5em;
 	}
 
 
