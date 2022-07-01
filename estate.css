@@ -536,6 +536,8 @@
 	color: #000;
 }
 
-.footer-links li{
+.footer-links1 li{
 	color: #000;
+	padding-right: 3em;
+    list-style:none;
 }

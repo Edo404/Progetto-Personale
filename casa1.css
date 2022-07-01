@@ -378,14 +378,19 @@ span.d3 {
     display: block;
     margin: 0 auto;
     position: relative;
-	top: 2em;
-	
+	bottom: 9em;
 }
 
 @media (max-width: 1120px){
 	.slides {
+		padding: 0;
+		width: 25em;
 		
-		bottom: 9em;
+		height: 35em;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		bottom: 7em;
 	}
 	.nav label {
 		top: 3em;
@@ -412,7 +417,7 @@ span.d3 {
     top: 0;
     opacity: 0;
     width: 30em;
-    height: 45em;
+    height: 20em;
     display: block;
     position: absolute;
 	
@@ -424,7 +429,6 @@ span.d3 {
 .slide img {
     width: 100%;
     height: 100%;
-	
 }
 
 
@@ -437,7 +441,7 @@ span.d3 {
 	opacity: 0;
     z-index: 9;
     cursor: pointer;
-	top: 4em;
+	top: 6em;
     transition: opacity .2s;
 
     color: #FFF;
@@ -467,7 +471,7 @@ input:checked + .slide-container .nav label { display: block; }
 
 .nav-dots {
 	width: 100%;
-	bottom: 5em;
+	bottom: -5em;
 	height: 11px;
 	display: block;
 	position: absolute;
@@ -494,9 +498,9 @@ input#img-1:checked ~ .nav-dots label#img-dot-1,
 input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4,
-input#img-5:checked ~ .nav-dots label#img-dot-5, 
-input#img-6:checked ~ .nav-dots label#img-dot-6, 
-input#img-7:checked ~ .nav-dots label#img-dot-7 {
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-5:checked ~ .nav-dots label#img-dot-6,
+input#img-5:checked ~ .nav-dots label#img-dot-7  {
 	background: rgba(0, 0, 0, 0.8);
 }
 
@@ -527,21 +531,21 @@ input#img-7:checked ~ .nav-dots label#img-dot-7 {
 
 
 
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
 	.slides {
 		width: 20em;
-		height: 35em;
-		bottom: 9em;
+		height: 15em;
+		bottom: 4em;
 	}
 
 	.nav label {
 		width: 50px;
 		height: 2em;
-		top: 4.5em;
+		top: 1.3em;
 	}
 
 
-}
+} */
 
 @media (max-width: 400px) {
 
@@ -570,4 +574,3 @@ input#img-7:checked ~ .nav-dots label#img-dot-7 {
 .details ul{
 	padding-left: 0;
 }
-

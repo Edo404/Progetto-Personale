@@ -59,7 +59,7 @@ $(window).scroll(function() {
       $(".container").removeClass("scrolling");
     }
 });
-/*
+
 //slider reviews
 $(function() {
   // slider type
@@ -139,7 +139,6 @@ $(function() {
     }
 });
 
-*/
 
 //buttons planimerty
 function pictureCucina(){
@@ -160,12 +159,12 @@ document.getElementById("right").src="images/Pontresina/bagno.jpg";
 
 function pictureBedroom1()
 {
-document.getElementById("right").src="images/Pontresina/cameramat.jpg";
+document.getElementById("right").src="images/Pontresina/camera.jpg";
 }
 
 function pictureBedroom2()
 {
-document.getElementById("right").src="images/Pontresina/camera.jpg";
+document.getElementById("right").src="images/Pontresina/cameramat.jpg";
 }
 
 function pictureSala()
@@ -231,9 +230,6 @@ function nextImage1() {
   slideshowImages1[currentImageCounter1].style.opacity = 1;
 }
 
-
-
-
 //slider reviews
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -266,3 +262,40 @@ window.onload= function () {
      plusSlides(1);
  }, 5000);
  }
+
+
+ //slider reviews
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("Slidesmy");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+window.onload= function () {
+ setInterval(function(){ 
+     plusSlides(1);
+ }, 5000);
+ }
+
+
+

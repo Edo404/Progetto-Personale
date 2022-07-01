@@ -408,9 +408,9 @@ span.d3 {
 @media (max-width: 1120px){
 	.slides {
 		padding: 0;
-		width: 50em;
+		width: 45em;
 		
-		height: 25em;
+		height: 30em;
 		display: block;
 		margin: 0 auto;
 		position: relative;
@@ -419,25 +419,6 @@ span.d3 {
 	.nav label {
 		top: 3em;
 	}
-
-	.slide {
-		top: 7em;
-		opacity: 0;
-		width: 50px;
-		height: 25px;
-		display: block;
-		position: absolute;
-		
-		transform: scale(0);
-	
-		transition: all .7s ease-in-out;
-	}
-	.slide img {
-		width: 40%;
-		height: 20%;
-	}
-	
-	
 	
 
 	
@@ -457,10 +438,10 @@ span.d3 {
 .slide-container { display: block; }
 
 .slide {
-    top: 7em;
+    top: 0;
     opacity: 0;
-    width: 70em;
-    height: 45em;
+    width: 30em;
+    height: 20em;
     display: block;
     position: absolute;
 	
